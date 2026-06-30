@@ -17,9 +17,10 @@ cfg-if.workspace = true
 thiserror.workspace = true
 
 [features]
-default = []
+default = ["csr"]
 hydrate = ["leptos/hydrate"]
 ssr = ["leptos/ssr", "leptos_meta/ssr", "leptos_router/ssr", "dep:leptos_axum"]
+csr = ["leptos/csr"]
 
 [package.metadata.stylance]
 workspace = true
